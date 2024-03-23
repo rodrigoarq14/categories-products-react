@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { CategoriesPage } from './pages/CategoriesPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { HomePage } from './pages/HomePage';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Logo from './assets/images/logo.png';
-import { Container, Nav, Navbar, Offcanvas, Row } from 'react-bootstrap';
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { BookmarkStarFill, HouseDoorFill, TagsFill } from 'react-bootstrap-icons';
-import { BrowserRouter, Link, NavLink, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, NavLink, Navigate, Route, Routes } from 'react-router-dom';
+import Logo from './assets/images/logo.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/custom.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <Navbar bg="dark" variant="dark" expand="lg" sticky='top' className='shadow'>
         <Container fluid>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/home">
             <img
               alt=""
               src={Logo}
