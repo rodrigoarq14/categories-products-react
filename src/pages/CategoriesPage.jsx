@@ -25,12 +25,12 @@ export const CategoriesPage = () => {
               <th scope="col">Actions</th>
             </tr>
           </thead>
-          <tbody>
-            <TrCategory name={'Categoria 1'} />
-            <TrCategory name={'Categoria 2'} />
-            <TrCategory name={'Categoria 3'} />
-            <TrCategory name={'Categoria 4'} />
-            <TrCategory name={'Categoria 5'} />
+          <tbody className="table-group-divider">
+            <TrCategory name={'Category 1'} />
+            <TrCategory name={'Category 2'} />
+            <TrCategory name={'Category 3'} />
+            <TrCategory name={'Category 4'} />
+            <TrCategory name={'Category 5'} />
           </tbody>
         </Table>
       </Row>

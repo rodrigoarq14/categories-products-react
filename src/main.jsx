@@ -4,7 +4,7 @@ import { CategoriesPage } from './pages/CategoriesPage';
 import { ProductsPage } from './pages/ProductsPage';
 import { HomePage } from './pages/HomePage';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
-import { BookmarkStarFill, HouseDoorFill, TagsFill } from 'react-bootstrap-icons';
+import { BookmarkStarFill, Github, HouseDoorFill, TagsFill } from 'react-bootstrap-icons';
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from 'react-router-dom';
 import Logo from './assets/images/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -72,7 +72,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <footer className='footer mt-auto py-3 shadow'>
         <Container className='text-center'>
           <span className='text-muted'>
-            © 2024 <a href="https://github.com/rodrigoarq14" target="_blank">rodrigoarq14</a>
+            © 2024 <Github className='ml-4 mb-1' /> <a href="https://github.com/rodrigoarq14" target="_blank">rodrigoarq14</a>
           </span>
         </Container>
       </footer>
