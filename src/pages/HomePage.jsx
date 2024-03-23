@@ -4,7 +4,7 @@ import { BookmarkStarFill, TagsFill } from "react-bootstrap-icons";
 
 export const HomePage = () => {
   return (
-    <Row className='justify-content-center'>
+    <Row className='justify-content-center mt-3'>
       <Col sm={12} md={3}>
         <InfoBox
           withIcon
