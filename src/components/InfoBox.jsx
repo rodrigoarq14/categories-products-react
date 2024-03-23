@@ -1,4 +1,4 @@
-import './assets/styles/custom.css';
+import '../assets/styles/custom.css';
 
 export const InfoBox = ({withIcon = true, icon = null, iconColor, iconBg, title, content}) => {
   return (

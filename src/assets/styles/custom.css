@@ -3,6 +3,8 @@ body {
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -16,7 +18,7 @@ body {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: #5d58d7;
+  background-color: #5d58d7 !important;
 }
 
 .social-networks a {
