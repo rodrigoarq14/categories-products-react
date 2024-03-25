@@ -57,7 +57,7 @@ export const ProductsPage = () => {
           timer: 2500
         });
 
-        featchProductsData();
+        fetchProductsData();
         setShowAddModal(false);
       } else {
         const validationFields = Object.keys(responseData.data).map((key) => {
@@ -99,7 +99,7 @@ export const ProductsPage = () => {
           timer: 2500
         });
 
-        featchProductsData();
+        fetchProductsData();
         setShowEditModal(false);
       } else {
         const validationFields = Object.keys(responseData.data).map((key) => {
@@ -137,7 +137,7 @@ export const ProductsPage = () => {
           timer: 2500
         });
 
-        featchProductsData();
+        fetchProductsData();
         setShowDeleteModal(false);
       } else {
         await MySwal.fire({
@@ -151,7 +151,7 @@ export const ProductsPage = () => {
     }
   };
 
-  const featchProductsData = async () => {
+  const fetchProductsData = async () => {
     try {
       const response = await fetch(`${urlApi}products`);
       const data = await response.json();
@@ -202,7 +202,7 @@ export const ProductsPage = () => {
   };
 
   useEffect(() => {
-    featchProductsData();
+    fetchProductsData();
     fetchCategoriesData();
   }, []);
 
