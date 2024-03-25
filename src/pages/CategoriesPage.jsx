@@ -28,7 +28,7 @@ export const CategoriesPage = () => {
   
   const [categories, setCategories] = useState([]);
 
-  // Operations with categories
+  // Operations with categories (CRUD) - (API)
 
   const handleAddCategory = async (data) => {
     try {
@@ -188,7 +188,6 @@ export const CategoriesPage = () => {
       const response = await fetch(`${urlApi}categories`);
       const data = await response.json();
       setCategories(data.data);
-      console.log('Categories fetched:', data);
     } catch (error) {
       console.error('An error occurred while fetching categories:', error);
     }
@@ -265,7 +264,7 @@ export const CategoriesPage = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="ligth" onClick={() => setShowAddModal(false)}>Close</Button>
+          <Button variant="" onClick={() => setShowAddModal(false)}>Close</Button>
           <Button variant="primary" onClick={handleOnSubmit}>
             <Floppy2 className='mr-2 mb-1' />
             {' '}
@@ -287,7 +286,7 @@ export const CategoriesPage = () => {
           <InfoBox withIcon={false} title='Category Description' content={categoryInfo.description} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="ligth" onClick={() => setShowInfoModal(false)}>Close</Button>
+          <Button variant="" onClick={() => setShowInfoModal(false)}>Close</Button>
         </Modal.Footer>
       </Modal>
       {/* Edit Modal */}
@@ -326,7 +325,7 @@ export const CategoriesPage = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="ligth" onClick={() => setShowEditModal(false)}>Close</Button>
+          <Button variant="" onClick={() => setShowEditModal(false)}>Close</Button>
           <Button variant="primary" onClick={handleSubmitEditCategory}>
             <Floppy2 className='mr-2 mb-1' />
             {' '}
@@ -348,7 +347,7 @@ export const CategoriesPage = () => {
           <p className="text-danger text-decoration-underline">This action cannot be undone.</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="ligth" onClick={() => setShowDeleteModal(false)}>Close</Button>
+          <Button variant="" onClick={() => setShowDeleteModal(false)}>Close</Button>
           <Button variant="danger" onClick={handleDeleteCategory}>
             <Trash className='mr-2 mb-1' />
             {' '}
