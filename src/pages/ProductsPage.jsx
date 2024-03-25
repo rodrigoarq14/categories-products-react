@@ -1,5 +1,5 @@
 import { Button, Col, Form, InputGroup, Modal, Row, Table } from "react-bootstrap";
-import { ArchiveFill, BlockquoteLeft, BookmarkStarFill, CashCoin, Eye, Floppy2, PlusCircle, TagFill, Trash } from "react-bootstrap-icons";
+import { ArchiveFill, BlockquoteLeft, BookmarkStarFill, CashCoin, Eye, Floppy2, PencilSquare, PlusCircle, TagFill, Trash } from "react-bootstrap-icons";
 import { TrProduct } from "../components/TrProduct";
 import { useEffect, useState } from "react";
 import { useForm } from "../hooks/useForm";
@@ -338,9 +338,9 @@ export const ProductsPage = () => {
       <Modal show={showEditModal} onHide={() => setShowEditModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <Eye className='mr-2 mb-1 text-info' />
+            <PencilSquare className='mr-2 mb-1 text-warning' />
             {' '}
-            Product Info
+            Edit Product
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
